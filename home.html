@@ -3,36 +3,51 @@
 <head>
   <title>OutOfTheBlue:A_website_for_curious_minds</title>
   <style>
+  	h1.page_title{
+  		}
   	body{
   		background-color: aliceblue;
   		font-family: "Times New Roman", "Arial", serif;
   	}
   	ul {
-  		padding: 15px 0;
+  		display: inline;
+  		margin: 0 150px;
+  		padding: 30px 0;
         color: black;
         background-color: azure;
     }
-    li {
+    li{
     	font-size: 20px;
     	display: inline;
-        padding: 15px 20px;
+        padding: 30px 20px;
     }
     li.active{
     	background-color: lightblue;
     }
+    li.page_title{
+
+    }
     li:hover, li.active:hover{
-    	background-color: deepskyblue;
+    	background-color: dodgerblue;
     	color: white;
+    }
+    li.page_title:hover{
+    	font-size: 50px;
+    	background-color: darkblue;
+  		color: blue;
+  		display: inline;
     }
   </style>
 </head>
 <body>
-	<div style = "text-align: center">
+	<div style = "text-align: left">
 		<ul>
+			<li class = page_title>OUT OF THE BLUE</li>
     		<li class = "active">Home</li>
         	<li>Articles</li>
         	<li>Courses</li>
-        	<li>About Me</li>
+			<li>Support Us</li>
+        	<li>About</li>
     	</ul>
 	</div>
 	</body>
