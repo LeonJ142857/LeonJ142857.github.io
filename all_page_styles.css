@@ -7,8 +7,8 @@ html {
     background: linear-gradient(135deg, rgba(112,131,255,1) 0%, rgba(255,255,255,1) 26%, rgba(255,255,255,1) 100%);
 }
 
-/* Menu Bar styling */
-ul {
+/* Horizontal Nav Bar styling */
+ul.h_nav_bar{
     list-style-type: none;
     overflow: hidden;
 	margin: 0 150px;
@@ -19,7 +19,7 @@ li{
     float: right;
     padding: 20px 15px;
 }
-li a{
+li a.nav_menu{
     display: block;
     text-decoration: none;
     text-align: center;
@@ -49,4 +49,34 @@ li.active, li.active :hover{
 .search_button{
     padding: 9px;
 }
-
+/* footer styling */
+footer{
+    box-sizing: border box;
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 25px;
+}
+.column{
+    padding: 15px;
+}
+.column.third{
+    display: inline;
+    width: 33.33%;
+}
+.column.half{
+    display: inline;
+    width: 50%;
+}
+.column.quarter{
+    display: inline;
+    width: 25%;
+}
+.column.forty{
+    display: inline;
+    width: 40%
+}
+.column.tenth{
+    display: inline;
+    width: 10%
+}

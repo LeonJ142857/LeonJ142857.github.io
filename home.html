@@ -6,17 +6,51 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-	<ul>
-		<li><a href = "about.html">About</a></li>
-		<li><a href = "support_us.html">Support Us</a></li>
-		<li><a href = "courses.html">Courses</a></li>
-		<li><a href = "articles.html">Articles</a></li>
-		<li class = "active"><a href="home.html"> Home </a></li>
+	<!-- Horizontal Navigation Bar-->
+	<ul class = "h_nav_bar">
+		<li><a class = "nav_menu" href = "about.html">About</a></li>
+		<li><a class = "nav_menu" href = "support_us.html">Support Us</a></li>
+		<li><a class = "nav_menu" href = "courses.html">Courses</a></li>
+		<li><a class = "nav_menu" href = "articles.html">Articles</a></li>
+		<li class = "active"><a class = "nav_menu" href="home.html"> Home </a></li>
 		<li class = site_title>OUT OF THE BLUE</li>
 		<form class="example" action="action_page.php">
   			<input class="search_input" type="text" placeholder="Search.." name="search">
 			<button class = "search_button" type="submit"><i class="fa fa-search"></i></button>
 		</form>
 	</ul>
+
+	<!-- fat-footer -->
+	<footer>
+		<div class = "column tenth">
+			<h3>Follow</h3>
+		</div>
+		<div class = "column half">
+			<h3>
+				About Out Of The Blue
+			</h3>
+			<p>
+				I'm a writer, programmer, math enthusiast, and an overall curious person who wants to learn
+				anything that involves math, science, and programming.
+				Ocassionally I also share about stuff related to psychology and philosophy.
+				This website is for showcasing my projects as a
+				computer science student and also for sharing deep ideas that came out of the blue, hence the name.
+			</p>
+			<div id = "footer_button_container">
+				<a class = "footer_button" href="about.html">More About Me</a>
+				<a class = "footer_button" href="contact.html">Contact Me</a>
+			</div>
+		</div>
+		<div class = "column forty">
+			<h3>Pages</h3>
+			<ul>
+				<li><a href = "home.html">Home</a></li>
+				<li><a href = "articles.html">Articles</a></li>
+				<li><a href = "courses.html">Courses</a></li>
+				<li><a href = "support_me.html">Support Me</a></li>
+				<li><a href = "about.html">About</a></li>
+			</ul>
+		</div>
+	</footer>
 </body>
 </html>
