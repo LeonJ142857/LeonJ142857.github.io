@@ -1,4 +1,7 @@
 /* whole page style */
+{
+    box-sizing: border-box;
+}
 html {
     height: 100%;
     background-size: cover;
@@ -8,35 +11,36 @@ html {
 }
 
 /* Horizontal Nav Bar styling */
-ul.h_nav_bar{
+ul.menu_bar{
     list-style-type: none;
     overflow: hidden;
 	margin: 0 150px;
 	padding: 0;
     background-color: #333;
 }
-li{
+.menu_bar li{
     float: right;
     padding: 20px 15px;
 }
-li a.nav_menu{
+.menu_bar li a{
     display: block;
     text-decoration: none;
     text-align: center;
     color: white;
 }
-li:hover{
+.menu_bar li:hover{
     background: linear-gradient(135deg, rgba(37,30,149,1) 0%, rgba(16,21,60,1) 0%, rgba(12,27,136,1) 100%);
     color: white;
     cursor: pointer;
 }
-li.active, li.active :hover{
+.menu_bar li.active, .menu_bar li.active :hover{
     background: linear-gradient(135deg, rgba(37,30,149,1) 0%, rgba(33,58,238,1) 0%, rgba(3,14,85,1) 100%);
 }
 .site_title{
     float:left;
 }
 .search_input, .search_button{
+    float: right;
     border: 1px solid black;
     border-radius: 20px;
     cursor: pointer;
@@ -47,6 +51,9 @@ li.active, li.active :hover{
     text-align: left;
 }
 .search_button{
+    margin-left: 2px;
+    margin-top: 12px;
+    margin-right: 75px;
     padding: 9px;
 }
 /* footer styling */
@@ -58,25 +65,20 @@ footer{
     padding: 25px;
 }
 .column{
-    padding: 15px;
+    float: left;
 }
-.column.third{
-    display: inline;
-    width: 33.33%;
-}
-.column.half{
-    display: inline;
+.middle{
     width: 50%;
 }
-.column.quarter{
+.side{
     display: inline;
     width: 25%;
 }
-.column.forty{
-    display: inline;
-    width: 40%
+footer:after {
+    content: "";
+    display: table;
+    clear: both;
 }
-.column.tenth{
-    display: inline;
-    width: 10%
+ul.site_map{
+    list-style-type: none;
 }
