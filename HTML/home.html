@@ -2,7 +2,9 @@
 <html>
 <head>
 	<title>OutOfTheBlue:A_website_for_curious_minds</title>
-	<link href = "all_page_styles.css" rel = "stylesheet" />
+	<link href = "../all_page_style/all_page_styles.css" rel = "stylesheet" />
+	<link href = "../all_page_style/top_nav_bar.css" rel = "stylesheet"/>
+	<link href = "../all_page_style/footer.css" rel = "stylesheet"/>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -13,7 +15,7 @@
 		<li><a href = "courses.html">Courses</a></li>
 		<li><a href = "articles.html">Articles</a></li>
 		<li class = "active"><a href="home.html"> Home </a></li>
-		<form class="example" action="action_page.php">
+		<form action="action_page.php">
   			<button class = "search_button" type="submit"><i class="fa fa-search"></i></button>
 			<input class="search_input" type="text" placeholder="Search.." name="search">
 		</form>
@@ -22,28 +24,27 @@
 
 	<!-- fat-footer -->
 	<footer>
-		<div class = "column side">
-			<h3>Follow</h3>
+		<div class = "column side follow">
+			<h2>Follow</h2>
 		</div>
-		<div class = "column middle">
-			<h3>
+		<div class = "column middle web_summary">
+			<h2>
 				About Out Of The Blue
-			</h3>
+			</h2>
 			<p>
-				I'm a writer, programmer, math enthusiast, and an overall curious person who wants to learn
-				anything that involves math, science, and programming.
+				I'm a writer, programmer, math enthusiast, and an overall curious person.
 				Ocassionally I also share about stuff related to psychology and philosophy.
 				This website is for showcasing my projects as a
 				computer science student and also for sharing deep ideas that came out of the blue, hence the name.
 			</p>
-			<div id = "footer_button_container">
-				<a class = "footer_button" href="about.html">More About Me</a>
-				<a class = "footer_button" href="contact.html">Contact Me</a>
+			<div class = "footer_button_container">
+				<a href="about.html">More About Me</a>
+				<a href="contact.html">Contact Me</a>
 			</div>
 		</div>
-		<div class = "column side">
-			<h3>Pages</h3>
-			<ul class="site_map">
+		<div class = "column side site_map">
+			<h2>Pages</h2>
+			<ul>
 				<li><a href = "home.html">Home</a></li>
 				<li><a href = "articles.html">Articles</a></li>
 				<li><a href = "courses.html">Courses</a></li>

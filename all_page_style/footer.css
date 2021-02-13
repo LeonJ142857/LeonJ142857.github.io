@@ -1,0 +1,75 @@
+footer{
+    width: 100%;
+    background: linear-gradient(153deg, rgba(0,0,0,1) 0%, rgba(107,102,102,1) 100%);
+    color: white;
+}
+/* adds a pseudo-element right after footer element, to make the layout table-like,
+ having columns, etc.*/
+footer:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*font formatting*/
+footer p, footer a{
+    font-size: 21px;
+    text-decoration: none;
+    color: white;
+}
+
+footer p{
+    line-height: 30px;
+}
+
+/*footer buttons */
+.footer_button_container{
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+footer .footer_button_container a{
+    border: 2px solid white;
+    padding: 8px 20px;
+    margin-right: 5px;
+    transition: background 0.75s, color 0.75s;
+}
+
+footer .footer_button_container a:hover{
+    background: white;
+    color: black;
+}
+
+/* column style */
+.column{
+    margin-top: -20px;
+    padding: 50px;
+    box-sizing: border-box;
+    float: left;
+}
+.middle{
+    width: 50%;
+}
+.side{
+    width: 25%;
+}
+
+/* site map style*/
+.site_map ul{
+    list-style-type: none;
+    margin-top: 22px;
+    margin-left: -40px;
+}
+.site_map a{
+    padding: 3px 3px 3px 10px;
+    display: block;
+    width: 60%;
+}
+.site_map a:hover{
+   background: rgb(255,255,255);
+   background: linear-gradient(135deg, rgba(255,255,255,1) 0%, rgba(185,184,184,1) 100%);
+   color: black;
+}
+.site_map h2{
+    margin-left: 10px;
+}
+

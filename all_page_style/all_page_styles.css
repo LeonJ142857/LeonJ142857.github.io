@@ -1,0 +1,12 @@
+/* whole page style */
+{
+    box-sizing: border-box;
+}
+html {
+    height: 100%;
+    background-size: cover;
+    background: #70bg32;
+    background-repeat:no-repeat;
+    background: linear-gradient(135deg, rgba(112,131,255,1) 0%, rgba(255,255,255,1) 26%, rgba(255,255,255,1) 100%);
+}
+
